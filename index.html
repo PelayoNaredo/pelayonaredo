@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelayo Naredo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="cabecera">
+        <figure>
+          <h1>Pelayo&nbsp;Naredo&nbsp;Garc&iacute;a</h1>
+          <img src="images/Portadaweb.jpg" alt="autor de la pagina" />
+        </figure>
+        <div>
+          <a href="#sobremi" class="titulo activo inicio">Sobre m&iacute; 1.</a>
+          <br />
+          <a href="#proyectos" class="titulo proyectos">Proyectos 2.</a> <br />
+          <a href="#fotografia" class="titulo foto">Fotograf&iacute;a 3.</a>
+          <br />
+          <a href="#curriculum" class="titulo curri">Curriculum 4.</a> <br />
+          <a href="#contacto" class="titulo contacto">Info de Contacto 5.</a>
+          <br />
+        </div>
+      </section>
+      <section class="intro" id="sobremi">
+        <p>
+          <strong
+            >¡Hola! soy Pelayo, desarrollador web, graduado en turismo y
+            fot&oacute;grafo en mis ratos libres.</strong
+          >
+          Actualmente estoy en <strong>busqueda de trabajo</strong> enfocandome
+          en entender bien la industria y las necesidades tanto de usuarios como
+          de empleadores.
+          <br />
+          En el desarrollo web, mi objetivo es crear
+          <strong>
+            experiencias interactivas, diseños atractivos y p&aacute;ginas
+            originales</strong
+          >. Mi trabajo como fot&oacute;grafo es un valor añadido que potencia
+          atenci&oacute;n al detalle a mis proyectos. Siempre busco aprender y
+          estar al dia con las tendencias para ofrecer soluciones innovadoras y
+          efectivas adaptandome a nuevas tecnologías.
+        </p>
+      </section>
+      <section class="cuerpo">
+        <article class="lenguajes">
+          <ul>
+            <li><img src="images/iconHTML.png" alt="icono html" /></li>
+            <li><img src="images/iconCSS.png" alt="icono css" /></li>
+            <li><img src="images/iconJS.png" alt="icono js" /></li>
+            <li>
+              <img src="images/iconAngular.png" alt="icono angularjs" />
+            </li>
+            <li><img src="images/iconPHP.png" alt="icono php" /></li>
+            <li><img src="images/iconSQL.png" alt="icono sql" /></li>
+            <li>
+              <img src="images/iconWP.png" alt="icono wordpress" />
+            </li>
+            <li>
+              <img src="images/iconLightroom.png" alt="icono lightroom" />
+            </li>
+            <li>
+              <img src="images/iconPS.png" alt="icono photoshop" />
+            </li>
+            <!-- continuar -->
+          </ul>
+        </article>
+        <div class="trabajos" id="proyectos">
+          <div class="cabeceraProy">
+            <h2>PROYECTOS Y TRABAJOS</h2>
+            <p>
+              A continuaci&oacute;n podr&aacute;s ver algunos de mis proyectos
+              realizados a lo largo del &uacute;ltimo a&ntilde;o.
+            </p>
+          </div>
+          <!-- bloque proyecto ET-->
+          <article class="proyecto">
+            <div class="contenedor">
+              <figure class="portadaProyecto">
+                <img
+                  class="imagen"
+                  src="images/proy-turist.png"
+                  alt="Pagina playas"
+                  onclick="showModal(this)"
+                />
+              </figure>
+              <h3>Puntos de inter&eacute;s tur&iacute;sticos</h3>
+              <div class="infoProyecto">
+                <p>
+                  La p&aacute;gina utiliza datos abiertos del Ayuntamiento de
+                  Gij&oacute;n para mostrar puntos de inter&eacute;s
+                  tur&iacute;sticos como alojamientos, monumentos y museos un
+                  <strong>mapa interactivo</strong>. Este trabajo destaca por la
+                  integraci&oacute;n de
+                  <strong
+                    >APIs, diseño de interfaces intuitivas y gesti&oacute;n
+                    din&aacute;mica de datos</strong
+                  >. El proposito de la p&aacute;gina es ser incorporada en el
+                  futuro por el Ayuntamiento en su pagina web oficial para tener
+                  una forma de mostrar informaci&oacute;n relevante para
+                  visitantes y ciudadanos.
+                </p>
+              </div>
+            </div>
+            <div class="galeria">
+              <figure>
+                <img
+                  src="images/galerias/proy-turist1.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Mapa de leaflet con marcadores personalizados y leyenda. <br> (Coordenadas obtenidas de los datos abiertos de Gijón)"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-turist2.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Muestra de las tarjetas del apartado de alojamientos."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-turist3.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Muestra de las tarjetas del apartado de museos."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-turist4.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Muestra de las tarjetas del apartado de monumentos."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-turist5.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Muestra de señalización de la ubicacion de un elemento en el mapa."
+                />
+              </figure>
+            </div>
+          </article>
+          <!-- fin bloque proyecto -->
+          <!-- bloque proyecto Interes turístico-->
+          <article class="proyecto">
+            <div class="contenedor">
+              <figure class="portadaProyecto">
+                <img
+                  class="imagen"
+                  src="images/proy-et.png"
+                  alt="pagina gijon acompaña"
+                  onclick="showModal(this)"
+                />
+              </figure>
+              <h3>Escuelas taller "Gij&oacute;n Acompa&ntilde;a"</h3>
+              <div class="infoProyecto">
+                <p>
+                  Escuelas Taller Gij&oacute;n Acompa&ntilde;a es una
+                  p&aacute;gina web que destaca por la
+                  <strong>gesti&oacute;n de contenidos</strong> y
+                  presentaci&oacute;n de informaci&oacute;n. Con un
+                  dise&ntilde;o intuitivo y f&aacute;cil de navegar, los
+                  usuarios pueden acceder r&aacute;pidamente a
+                  informaci&oacute;n actualizada sobre programas, horarios y
+                  eventos. Este proyecto muestra la capacidad para organizar y
+                  presentar datos de manera clara y atractiva, as&iacute; como
+                  la capacidad de <strong>trabajar en equipo</strong> en
+                  proyectos de tama&ntilde;o grande y mediano.
+                  <br />
+                  Para acceder a la página visita el siguiente
+                  <a href="ETW23.github.io">enlace.</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="galeria">
+              <figure>
+                <img
+                  src="images/galerias/proy-et1.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Seccion de noticias auto-actualizable con las secciones incluidas en el html 'noticias'."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-et2.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Apartado de Alumnado con galería y secciones independientes."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-et3.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Agenda de eventos."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-et4.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Pagina de noticias."
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/galerias/proy-et5.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Seccion de informacion de modulos y certificados."
+                />
+              </figure>
+            </div>
+          </article>
+          <!-- fin bloque proyecto -->
+          <!-- bloque proyecto playas Gijon-->
+          <article class="proyecto">
+            <div class="contenedor">
+              <figure class="portadaProyecto playas">
+                <img
+                  src="images/galerias/proy-playas.png"
+                  class="imagen"
+                  onclick="showModal(this)"
+                  class="imagen"
+                  alt="Cuadro sobre información en tiempo real de las playas."
+                />
+              </figure>
+              <h3>Aplicaci&oacute;n Web <br />Gij&oacute;n Playas</h3>
+              <div class="infoProyecto">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officiis nemo amet sapiente similique inventore itaque,
+                  molestiae quas laudantium cumque eum aliquid voluptas quasi
+                  non velit, ex recusandae ipsam nulla placeat quia odit,
+                  tenetur deleniti repellendus odio nobis! Harum, laborum dolore
+                  illo voluptatibus animi similique quo doloremque iste in nobis
+                  voluptates?
+                </p>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officiis nemo amet sapiente similique inventore itaque,
+                  molestiae quas laudantium cumque eum aliquid voluptas quasi
+                  non velit, ex recusandae ipsam nulla placeat quia odit,
+                  tenetur deleniti repellendus odio nobis! Harum, laborum dolore
+                  illo voluptatibus animi similique quo doloremque iste in nobis
+                  voluptates?
+                </p>
+              </div>
+            </div>
+          </article>
+          <!-- fin bloque proyecto -->
+          <!-- bloque proyecto app horarios-->
+          <article class="proyecto">
+            <div class="contenedor">
+              <figure class="portadaProyecto">
+                <img
+                  class="imagen"
+                  src=""
+                  alt="inicio app horarios"
+                  onclick="showModal(this)"
+                />
+              </figure>
+              <h3>App gesti&oacute;n de horarios I.A.</h3>
+              <div class="infoProyecto">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus dolore aperiam nisi eum voluptate nihil minus
+                  laudantium, minima, saepe nemo quae, placeat alias quia
+                  excepturi iusto tempore commodi labore maiores ab dolores
+                  provident harum assumenda optio explicabo! Perspiciatis
+                  numquam nostrum, accusantium sit quia laboriosam molestias,
+                  laudantium, eaque nisi temporibus eum.
+                </p>
+              </div>
+            </div>
+
+            <div class="galeria">
+              <figure>
+                <img
+                  src=""
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Seccion de noticias auto-actualizable con las secciones incluidas en el html 'noticias'."
+                />
+              </figure>
+              <figure>
+                <img
+                  src=""
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Apartado de Alumnado con galería y secciones independientes."
+                />
+              </figure>
+              <figure>
+                <img
+                  src=""
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Agenda de eventos."
+                />
+              </figure>
+              <figure>
+                <img
+                  src=""
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Pagina de noticias."
+                />
+              </figure>
+              <figure>
+                <img
+                  src=""
+                  class="imagen"
+                  onclick="showModal(this)"
+                  alt="Seccion de informacion de modulos y certificados."
+                />
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="cabeceraFoto" id="fotografia">
+        <h2>FOTOGRAF&Iacute;A</h2>
+        <p>
+          A continuaci&oacute;n podr&aacute;s ver algunos de mis trabajos como
+          fotografo freelance.
+        </p>
+      </div>
+      <section class="galeriaFotos">
+        <div class="portadaFotos">
+          <figure class="fotoModa" data-index="0">
+            <img src="images/fotografía/db2.jpg" alt="Deal Black Wear" />
+            <h3>Deal Black Wear</h3>
+          </figure>
+          <figure class="fotoModa" data-index="1">
+            <img src="images/fotografía/hh1.jpg" alt="High Hope Clothing" />
+            <h3>High Hope Clothing</h3>
+          </figure>
+          <figure class="fotoModa" data-index="2">
+            <img src="images/fotografía/onne3.jpg" alt="Ônne Sport Wear" />
+            <h3>Ônne&nbsp;Sport Wear</h3>
+          </figure>
+        </div>
+      </section>
+
+      <div class="cabeceraCurri" id="curriculum">
+        <h2>CURRICULUM</h2>
+        <p>
+          Aqui podrás ver mis inquietudes profesionales, estudios y experiencias
+          en el mundo laboral.
+        </p>
+      </div>
+      <section class="curriculum">
+        <article class="estudios">
+          <div class="subtit">
+            <img src="images/estudios.png" alt="" />
+            <h3 class="subCurri">Estudios</h3>
+          </div>
+
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">2014</div>
+              <div class="linea l1"></div>
+              <div class="texto">bachillerato</div>
+              <span class="flecha">&#10552;</span>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">2021</div>
+              <div class="linea l2"></div>
+              <div class="texto">turismo</div>
+              <span class="flecha">&#10552;</span>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">2023</div>
+              <div class="linea l3"></div>
+              <div class="texto">certificados</div>
+              <span class="flecha">&#10552;</span>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">2023</div>
+              <div class="linea l4"></div>
+              <div class="texto">cursos</div>
+              <span class="flecha">&#10552;</span>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">2024</div>
+              <div class="linea l5"></div>
+              <div class="texto">f.p. daw &lt;</div>
+              <span class="flecha">&#10552;</span>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+        </article>
+        <!-- experiencia -->
+        <article class="experiencia">
+          <div class="subtit">
+            <h3 class="subCurri">Experiencia</h3>
+            <img src="images/experiencia.png" alt="" />
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">camarero</div>
+              <div class="linea l6"></div>
+              <div class="texto">2020</div>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">fotografo&nbsp;freelance</div>
+              <div class="linea l7"></div>
+              <div class="texto">2020</div>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">recepcionista a.c.</div>
+              <div class="linea l8"></div>
+              <div class="texto">2021</div>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">profesor&nbsp;fotografia</div>
+              <div class="linea l9"></div>
+              <div class="texto">2022</div>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+          <div class="esBar">
+            <div class="conteTitulo">
+              <div class="texto">&gt; desarrollador&nbsp;web</div>
+              <div class="linea l10"></div>
+              <div class="texto">2024</div>
+            </div>
+            <div class="conteTexto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus pariatur esse quae ipsum, doloremque cum? Expedita,
+                autem. Rem cumque, illo totam tenetur inventore quae animi iure
+                sunt molestiae sapiente sed!
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="descarga">
+          <p>
+            Si quieres consultar mi curriculum completo puedes descargarlo en el
+            siguiente bot&oacute;n:
+          </p>
+          <a class="botonCurri" href="src/CV_PelayoNaredo.pdf">
+            DESCARGAR CURRICULUM &#10515;
+          </a>
+        </article>
+      </section>
+      <div class="cabeceraConta" id="contacto">
+        <h2>CONTACTO</h2>
+        <p>
+          Aquí podrás encontrar mis datos de contacto para cualquier consulta,
+          colaboración o propuesta profesional.
+        </p>
+      </div>
+      <section class="contacto">
+        <div class="formulario">
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+
+          <div id="status"></div>
+        </div>
+        <div class="informacion">
+          <h3>Informaci&oacute;n</h3>
+          <p>Telefono:</p>
+          <p><a href="tel:+34 626734983">626734983</a></p>
+          <p>Email:</p>
+          <p><a href="mailto:naredo43@gmail.com">naredo43@gmail.com</a></p>
+          <p>RRSS:</p>
+          <div class="rrss">
+            <a href="https://www.instagram.com/north_arder/" target="_blank"
+              ><img src="images/logoIg.png" alt="instagram"
+            /></a>
+            <a href="https://www.linkedin.com/in/pelayonaredo" target="_blank"
+              ><img src="images/logoLinkedin.png" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Pelayo Naredo - 2024</footer>
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-warper">
+        <img class="modal-content" id="img01" />
+        <div class="modal-thumbnails" id="modal-thumbnails"></div>
+      </div>
+      <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
