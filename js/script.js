@@ -4,6 +4,7 @@ function showModal(element) {
   var captionTexto = document.getElementById("caption");
   var modalWrapper = document.getElementsByClassName("modal-warper")[0];
   var modalContent = document.getElementsByClassName("modal-content")[0];
+  var modalThumbnails = document.getElementsByClassName("modal-thumbnails")[0];
 
   if (element.className != "fotosModa") {
     // Añadir clases si la condición se cumple
@@ -12,6 +13,9 @@ function showModal(element) {
     }
     if (modalContent) {
       modalContent.classList.add("modal-content-landscape");
+    }
+    if (modalThumbnails) {
+      modalThumbnails.classList.add("modal-thumbnails-landscape");
     }
   }
   modal.style.display = "block";
@@ -79,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "block";
       modalImg.src = descriptions[index].img;
       captionTexto.innerHTML = `
-            <h3>${descriptions[index].titulo}</h3>
+            <h4>${descriptions[index].titulo}</h4>
             <p>${descriptions[index].texto}</p>
         `;
       modalThumbnails.innerHTML = ""; // Limpiar thumbnails
@@ -114,4 +118,32 @@ document.addEventListener("DOMContentLoaded", function () {
       closeModal();
     }
   };
+});
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  Email.send({
+    SecureToken: "your_secure_token", // Puedes obtener este SecureToken desde https://smtpjs.com
+    To: "naredo43@gmail.com",
+    From: email, // Puedes cambiar esto a un correo fijo
+    Subject: `Nuevo correo web de ${name}`,
+    Body: `
+          <h3>Nombre: ${name}</h3>
+          <p>Email: ${email}</p>
+          <p>Mensage: ${message}</p>
+      `,
+  }).then(function (response) {
+    if (response == "OK") {
+      document.getElementById("status").textContent =
+        "Mensaje enviado correctamente!";
+    } else {
+      document.getElementById("status").textContent =
+        "Error al enviar su correo, sentimos las molestias.";
+    }
+  });
 });

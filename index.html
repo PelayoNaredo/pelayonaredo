@@ -24,13 +24,13 @@
           <img src="images/Portadaweb.jpg" alt="autor de la pagina" />
         </figure>
         <div>
-          <a href="#sobremi" class="titulo activo inicio">Sobre m&iacute; 1.</a>
+          <a href="#sobremi" class="titulo activo">Sobre m&iacute; 1.</a>
           <br />
-          <a href="#proyectos" class="titulo proyectos">Proyectos 2.</a> <br />
-          <a href="#fotografia" class="titulo foto">Fotograf&iacute;a 3.</a>
+          <a href="#proyectos" class="titulo">Proyectos 2.</a> <br />
+          <a href="#fotografia" class="titulo">Fotograf&iacute;a 3.</a>
           <br />
-          <a href="#curriculum" class="titulo curri">Curriculum 4.</a> <br />
-          <a href="#contacto" class="titulo contacto">Info de Contacto 5.</a>
+          <a href="#curriculum" class="titulo">Curriculum 4.</a> <br />
+          <a href="#contacto" class="titulo">Info de Contacto 5.</a>
           <br />
         </div>
       </section>
@@ -545,7 +545,7 @@
         </article>
         <article class="descarga">
           <p>
-            Si quieres consultar mi curriculum completo puedes descargarlo en el
+            si quieres consultar mi curriculum completo puedes descargarlo en el
             siguiente bot&oacute;n:
           </p>
           <a class="botonCurri" href="src/CV_PelayoNaredo.pdf">
@@ -561,34 +561,54 @@
         </p>
       </div>
       <section class="contacto">
-        <div class="formulario">
+        <div class="formulario"><h4>
+              para consultas, ofertas de trabajo y mas información, puedes
+              contactarme mediante el siguiente formulario:
+            </h4>
           <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="NOMBRE"
+              required
+            />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="EMAIL"
+              required
+            />
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="MENSAJE"
+              required
+            ></textarea>
+            <div class="botones">
+              <input type="reset" value="BORRAR" />
+              <input type="submit" value="ENVIAR" />
+            </div>
           </form>
 
           <div id="status"></div>
         </div>
         <div class="informacion">
-          <h3>Informaci&oacute;n</h3>
+          <h3>Info.</h3>
           <p>Telefono:</p>
           <p><a href="tel:+34 626734983">626734983</a></p>
           <p>Email:</p>
           <p><a href="mailto:naredo43@gmail.com">naredo43@gmail.com</a></p>
           <p>RRSS:</p>
           <div class="rrss">
-            <a href="https://www.instagram.com/north_arder/" target="_blank"
+            <a rel="noopener" href="https://www.instagram.com/north_arder/" target="_blank"
               ><img src="images/logoIg.png" alt="instagram"
             /></a>
-            <a href="https://www.linkedin.com/in/pelayonaredo" target="_blank"
+            <a rel="noopener" href="https://www.linkedin.com/in/pelayonaredo" target="_blank"
               ><img src="images/logoLinkedin.png" alt="linkedin"
             /></a>
           </div>
@@ -599,7 +619,7 @@
     <div id="myModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <div class="modal-warper">
-        <img class="modal-content" id="img01" />
+        <img class="modal-content" id="img01" alt="imagen selecionada"/>
         <div class="modal-thumbnails" id="modal-thumbnails"></div>
       </div>
       <div id="caption"></div>
