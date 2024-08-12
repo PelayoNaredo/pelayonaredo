@@ -229,8 +229,6 @@ footer {
   flex-wrap: wrap;
 }
 
-
-
 .thumbnail:hover {
   opacity: 0.7;
 }
@@ -267,6 +265,15 @@ footer {
 
 .fotoModa img:hover {
   filter: grayscale(0%);
+}
+
+.enlaceFotos {
+  width: 80%;
+  margin: 2vw auto;
+  text-align: center;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-size: 1vw;
 }
 
 /* Seccion Curriculum */
@@ -471,7 +478,6 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 16px;
-  
 }
 .informacion p {
   font-variant: small-caps;
@@ -501,14 +507,14 @@ footer {
   height: 2vw;
 }
 
-.formulario h4{
+.formulario h4 {
   width: 80%;
   margin: 0px auto;
   font-size: 0.8vw;
   font-variant: small-caps;
   text-align: center;
 }
-#contactForm{
+#contactForm {
   width: 80%;
   margin: auto;
 }
@@ -533,15 +539,15 @@ textarea {
 }
 .botones {
   display: flex;
-  
 }
-input[type="submit"], input[type="reset"]{
+input[type="submit"],
+input[type="reset"] {
   cursor: pointer;
   transition: ease-in-out 0.2s;
-
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover{
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   transform: scale(1.05);
 }
 /* MODAL galeria */
@@ -562,7 +568,7 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 
 .modal-content {
   display: block;
-   width: 70%;
+  width: 70%;
   /* max-width: 700px; */
 }
 
@@ -577,7 +583,9 @@ input[type="submit"]:hover, input[type="reset"]:hover{
   height: 150px;
 }
 
-.modal-content, .modal-thumbnails, .modal-warper,
+.modal-content,
+.modal-thumbnails,
+.modal-warper,
 #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -595,9 +603,9 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 }
 .modal-content-landscape {
   display: block;
-   width: 100% !important; 
+  width: 100% !important;
 }
-.modal-thumbnails-landscape{
+.modal-thumbnails-landscape {
   display: none !important;
 }
 
@@ -653,4 +661,98 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 #curriculum,
 body {
   scroll-behavior: smooth;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .cabecera {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .cabecera figure img {
+    width: 100%;
+  }
+  .cabecera figure {
+    width: 70%;
+  }
+  .cabecera h1 {
+    width: 17px;
+    font-size: 5vw;
+  }
+  .cabecera div {
+    width: 90%;
+  }
+  .titulo {
+    font-size: 7vw;
+  }
+  .intro p {
+    font-size: 4.4vw;
+  }
+  .lenguajes ul {
+    flex-wrap: wrap;
+  }
+  .lenguajes ul li {
+    margin: 17px;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+
+  .cabeceraProy p,
+  .cabeceraFoto p,
+  .cabeceraCurri p,
+  .cabeceraConta p {
+    font-size: 3vw;
+    width: 86%;
+    margin: 0 0 5vw 15%;
+  }
+  h3 {
+    font-size: 4.5vw;
+  }
+  .infoProyecto {
+    font-size: 2.4vw;
+  }
+  .galeria {
+    flex-wrap: wrap;
+  }
+  .galeria figure {
+    width: 26%;
+  }
+  .cabeceraFoto,
+  .cabeceraCurri,
+  .cabeceraProy,
+  .cabeceraConta {
+    margin: 10vw auto 1vw auto;
+    width: 90%;
+  }
+  .portadaFotos {
+    width: 100%;
+    height: 60vw;
+  }
+  .fotoModa {
+    box-shadow: #d92929c7 -3px 3px;
+  }
+  .fotoModa h3 {
+    font-size: 3vw;
+  }
+  .enlaceFotos {
+    font-size: 2vw;
+    margin: 4vw auto;
+  }
+  .curriculum {
+    width: 100%;
+  }
+  .descarga p {
+    font-size: 2.5vw;
+    padding-bottom: 2vw;
+    text-align: center;
+  }
+  .contacto {
+    flex-direction: column;
+  }
+  .formulario,
+  .informacion {
+    width: 80%;
+    height: 25vh;
+  }
 }

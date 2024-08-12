@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var descriptions = [
     {
       titulo: "Deal Black Wear",
-      texto: "Descripción de Deal Black Wear...",
+      texto: "Marca de ropa de estilo urbano con origen en Gij&oacute;n.",
       img: "images/fotografía/db2.jpg",
       thumbnails: [
         "images/fotografía/db1.jpg",
@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       titulo: "High Hope Clothing",
-      texto: "Descripción de High Hope Clothing...",
+      texto:
+        "Marca de Reino Unido con diseños y filosofia inspirada en la naturaleza.",
       img: "images/fotografía/hh1.jpg",
       thumbnails: [
         "images/fotografía/hh1.jpg",
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       titulo: "Ônne Sport Wear",
-      texto: "Descripción de Ônne Sport Wear...",
+      texto: "Marca de ropa de deporte y baño destinda a publico femenino.",
       img: "images/fotografía/onne3.jpg",
       thumbnails: [
         "images/fotografía/onne1.jpg",
