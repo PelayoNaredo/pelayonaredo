@@ -119,31 +119,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
-
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  Email.send({
-    SecureToken: "your_secure_token", // Puedes obtener este SecureToken desde https://smtpjs.com
-    To: "naredo43@gmail.com",
-    From: email, // Puedes cambiar esto a un correo fijo
-    Subject: `Nuevo correo web de ${name}`,
-    Body: `
-          <h3>Nombre: ${name}</h3>
-          <p>Email: ${email}</p>
-          <p>Mensage: ${message}</p>
-      `,
-  }).then(function (response) {
-    if (response == "OK") {
-      document.getElementById("status").textContent =
-        "Mensaje enviado correctamente!";
-    } else {
-      document.getElementById("status").textContent =
-        "Error al enviar su correo, sentimos las molestias.";
-    }
-  });
-});
