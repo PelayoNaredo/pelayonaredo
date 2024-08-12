@@ -89,11 +89,15 @@ li img {
   width: 100%;
 }
 /* cabecera trabajos */
-.trabajos,
+.trabajos {
+  width: 80%;
+  margin: auto;
+}
+.cabeceraProy,
 .cabeceraFoto,
 .cabeceraCurri,
 .cabeceraConta {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 h2 {
@@ -481,21 +485,27 @@ footer {
 }
 .informacion p {
   font-variant: small-caps;
-  margin: 0.5vw 0;
-  font-size: 0.8vw;
+  /* margin: 0.5vw 0; */
+  font-size: 1.5vw;
 }
 .informacion a {
   color: #f2f1e9;
   text-decoration: none;
   font-weight: 600;
 }
+.informacion p:nth-child(3),
+.informacion p:nth-child(5) {
+  margin-bottom: 1vw;
+}
 
 .informacion h3 {
   color: #f2f1e9;
   text-shadow: -3px 3px #d92929;
+  margin-bottom: 2vw;
 }
 .rrss {
-  height: 2vw;
+  height: 3vw;
+  margin-top: 0.5vw;
 }
 .rrss a {
   width: 2vw;
@@ -510,7 +520,7 @@ footer {
 .formulario h4 {
   width: 80%;
   margin: 0px auto;
-  font-size: 0.8vw;
+  font-size: 1vw;
   font-variant: small-caps;
   text-align: center;
 }
@@ -673,17 +683,21 @@ body {
     width: 100%;
   }
   .cabecera figure {
-    width: 70%;
+    width: 75%;
+    margin-right: 5vw;
   }
   .cabecera h1 {
     width: 17px;
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
   .cabecera div {
     width: 90%;
   }
   .titulo {
     font-size: 7vw;
+  }
+  .intro {
+    padding: 15px 5%;
   }
   .intro p {
     font-size: 4.4vw;
@@ -693,11 +707,25 @@ body {
   }
   .lenguajes ul li {
     margin: 17px;
+    width: 35px;
   }
   h2 {
     font-size: 6vw;
   }
-
+  .contenedor {
+    flex-direction: column;
+  }
+  .portadaProyecto {
+    width: 80%;
+    order: 2;
+  }
+  .contenedor h3 {
+    width: 80%;
+    order: 1;
+  }
+  .infoProyecto {
+    order: 3;
+  }
   .cabeceraProy p,
   .cabeceraFoto p,
   .cabeceraCurri p,
@@ -742,10 +770,41 @@ body {
   .curriculum {
     width: 100%;
   }
+  .esBar {
+    margin: 2vw 0;
+  }
+  .texto {
+    font-size: 2.2vw;
+  }
+  .linea {
+    height: 1px;
+  }
+  .conteTexto {
+    padding: 4px 4px;
+    margin: 0 5vw;
+    width: 85vw;
+    font-size: 2vw;
+  }
+  .abierto {
+    height: 9vw;
+  }
+  .experiencia .conteTexto {
+    margin: 0 0 0 5vw;
+  }
+  .descarga {
+    width: 90%;
+    margin: auto;
+  }
   .descarga p {
     font-size: 2.5vw;
     padding-bottom: 2vw;
     text-align: center;
+  }
+  .botonCurri {
+    width: 30%;
+    height: 6vw;
+    line-height: 5.8vw;
+    font-size: 1.4vw;
   }
   .contacto {
     flex-direction: column;
@@ -754,5 +813,55 @@ body {
   .informacion {
     width: 80%;
     height: 25vh;
+    margin: 1vw;
+  }
+  .formulario h4 {
+    font-size: 2vw;
+  }
+  input,
+  textarea,
+  .botones {
+    font-size: 2vw;
+  }
+  textarea {
+    height: 19vw;
+    padding: 1vw;
+    border-radius: 8px;
+  }
+  .informacion h3 {
+    text-shadow: -2px 2px #d92929;
+    font-size: 6vw;
+  }
+  .informacion p {
+    font-size: 2.5vw;
+  }
+  .rrss {
+    display: flex;
+  }
+  .rrss a {
+    display: block;
+    width: 6vw;
+    height: auto;
+    margin: 1vw;
+  }
+  .rrss a img {
+    width: 100%;
+    height: auto;
+  }
+  .modal-thumbnails {
+    width: 15vw;
+    flex-direction: row;
+  }
+  .modal-content {
+    width: 70%;
+  }
+  .modal-warper {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .modal-warper-landscape {
+    width: 90vw;
+    margin-top: 20vw !important;
   }
 }
