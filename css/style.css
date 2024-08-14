@@ -691,10 +691,10 @@ body {
     font-size: 5.5vw;
   }
   .cabecera div {
-    width: 90%;
+    width: 100%;
   }
   .titulo {
-    font-size: 7vw;
+    font-size: 30px;
   }
   .intro {
     padding: 15px 5%;
@@ -710,7 +710,7 @@ body {
     width: 35px;
   }
   h2 {
-    font-size: 6vw;
+    font-size: 30px;
   }
   .contenedor {
     flex-direction: column;
@@ -720,8 +720,9 @@ body {
     order: 2;
   }
   .contenedor h3 {
-    width: 80%;
+    width: 100%;
     order: 1;
+    text-align: center;
   }
   .infoProyecto {
     order: 3;
@@ -730,21 +731,24 @@ body {
   .cabeceraFoto p,
   .cabeceraCurri p,
   .cabeceraConta p {
-    font-size: 3vw;
-    width: 86%;
-    margin: 0 0 5vw 15%;
+    font-size: 16px;
+    width: 100%;
+    margin: 0 0 5vw 0%;
   }
   h3 {
-    font-size: 4.5vw;
+    font-size: 20px;
+    padding: 16px 0px;
   }
   .infoProyecto {
-    font-size: 2.4vw;
+    font-size: 14px;
+    margin: 16px 0;
   }
   .galeria {
     flex-wrap: wrap;
   }
   .galeria figure {
-    width: 26%;
+    width: 30%;
+    margin: 3px auto;
   }
   .cabeceraFoto,
   .cabeceraCurri,
@@ -761,32 +765,41 @@ body {
     box-shadow: #d92929c7 -3px 3px;
   }
   .fotoModa h3 {
-    font-size: 3vw;
+    font-size: 16px;
+    padding: 0 0 0 2px;
   }
   .enlaceFotos {
-    font-size: 2vw;
+    font-size: 11px;
     margin: 4vw auto;
   }
   .curriculum {
     width: 100%;
   }
-  .esBar {
-    margin: 2vw 0;
+  .subtit img {
+    width: 24px;
   }
+  .esBar {
+    margin: 0;
+    height: 5vw;
+  }
+
   .texto {
-    font-size: 2.2vw;
+    font-size: 12px;
   }
   .linea {
     height: 1px;
   }
   .conteTexto {
     padding: 4px 4px;
-    margin: 0 5vw;
+
     width: 85vw;
-    font-size: 2vw;
+    font-size: 12px;
+  }
+  .conteTitulo {
+    height: 14px;
   }
   .abierto {
-    height: 9vw;
+    height: 73px;
   }
   .experiencia .conteTexto {
     margin: 0 0 0 5vw;
@@ -796,32 +809,40 @@ body {
     margin: auto;
   }
   .descarga p {
-    font-size: 2.5vw;
+    font-size: 11px;
     padding-bottom: 2vw;
     text-align: center;
   }
   .botonCurri {
-    width: 30%;
+    width: 46%;
     height: 6vw;
     line-height: 5.8vw;
-    font-size: 1.4vw;
+    font-size: 11px;
+    border-radius: 16px;
   }
   .contacto {
     flex-direction: column;
+  }
+  #contactForm {
+    width: 90%;
   }
   .formulario,
   .informacion {
     width: 80%;
     height: 25vh;
     margin: 1vw;
+    padding: 0;
   }
   .formulario h4 {
-    font-size: 2vw;
+    font-size: 10px;
+    width: 90%;
+    font-weight: 500;
+    margin-top: 4px;
   }
   input,
-  textarea,
-  .botones {
-    font-size: 2vw;
+  textarea {
+    font-size: 12px;
+    margin-top: 8px;
   }
   textarea {
     height: 19vw;
@@ -831,18 +852,23 @@ body {
   .informacion h3 {
     text-shadow: -2px 2px #d92929;
     font-size: 6vw;
+    padding: 0px;
+    margin: 8px;
+  }
+  .informacion {
+    padding: 12px;
   }
   .informacion p {
-    font-size: 2.5vw;
+    font-size: 12px;
   }
   .rrss {
     display: flex;
   }
   .rrss a {
     display: block;
-    width: 6vw;
-    height: auto;
-    margin: 1vw;
+    width: 30px;
+    height: 30px;
+    margin: 6px 12px;
   }
   .rrss a img {
     width: 100%;
