@@ -6,7 +6,7 @@ function showModal(element) {
   var modalContent = document.getElementsByClassName("modal-content")[0];
   var modalThumbnails = document.getElementsByClassName("modal-thumbnails")[0];
 
-  if (element.className != "fotosModa") {
+  if (element.className != "fotoModa") {
     // Añadir clases si la condición se cumple
     if (modalWrapper) {
       modalWrapper.classList.add("modal-warper-landscape");
