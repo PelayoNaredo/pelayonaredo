@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pelayo Naredo</title>
+    <title>Pelayo Naredo - Desarrollador Web</title>
+
+    <!--SEO -->
+    <meta name="description" content="Bienvenido a mi portfolio personal, donde puedes conocer más sobre mis proyectos y habilidades como desarrollador web y fotografo." />
+    <meta name="keywords" content="Pelayo Naredo, portfolio, desarrollador web, React, Node.js, diseño responsivo, JavaScript, frontend, backend" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.pelayonaredo.es" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+   
+    <!-- Meta para redes sociales -->
+    <meta property="og:title" content="Portfolio de Pelayo Naredo" />
+    <meta property="og:description" content="Descubre mis proyectos y habilidades." />
+    <meta property="og:image" content="images/Portadaweb.jpg" />
+    <meta property="og:url" content="https://pelayonaredo.es" />
+    
+    <!-- Color de tema para navegadores -->
+    <meta name="theme-color" content="#ffffff" />
+</head>
   <body>
     <main>
       <section class="cabecera">
@@ -55,29 +68,20 @@
           efectivas adaptandome a nuevas tecnologías.
         </p>
       </section>
-      <section class="cuerpo">
-        <article class="lenguajes">
-          <ul>
-            <li><img src="images/iconHTML.png" alt="icono html" /></li>
-            <li><img src="images/iconCSS.png" alt="icono css" /></li>
-            <li><img src="images/iconJS.png" alt="icono js" /></li>
-            <li>
-              <img src="images/iconAngular.png" alt="icono angularjs" />
-            </li>
-            <li><img src="images/iconPHP.png" alt="icono php" /></li>
-            <li><img src="images/iconSQL.png" alt="icono sql" /></li>
-            <li>
-              <img src="images/iconWP.png" alt="icono wordpress" />
-            </li>
-            <li>
-              <img src="images/iconLightroom.png" alt="icono lightroom" />
-            </li>
-            <li>
-              <img src="images/iconPS.png" alt="icono photoshop" />
-            </li>
-            <!-- continuar -->
-          </ul>
-        </article>
+      <article class="lenguajes">
+        <div class="carousel">
+          <div class="carousel__item"><img src="images/iconHTML.png" alt="HTML" /></div>
+          <div class="carousel__item"><img src="images/iconCSS.png" alt="CSS" /></div>
+          <div class="carousel__item"><img src="images/iconJS.png" alt="JavaScript" /></div>
+          <div class="carousel__item"><img src="images/iconAngular.png" alt="Angular" /></div>
+          <div class="carousel__item"><img src="images/iconPHP.png" alt="PHP" /></div>
+          <div class="carousel__item"><img src="images/iconSQL.png" alt="SQL" /></div>
+          <div class="carousel__item"><img src="images/iconWP.png" alt="WordPress" /></div>
+          <div class="carousel__item"><img src="images/iconLightroom.png" alt="Lightroom" /></div>
+          <div class="carousel__item"><img src="images/iconPS.png" alt="Photoshop" /></div>
+        </div>
+      </article>
+      
         <div class="cabeceraProy">
             <h2>PROYECTOS Y TRABAJOS</h2>
             <p>
@@ -279,77 +283,67 @@
           </article>
           <!-- fin bloque proyecto -->
           <!-- bloque proyecto app horarios-->
-           <!--  
           <article class="proyecto">
             <div class="contenedor">
               <figure class="portadaProyecto">
                 <img
                   class="imagen"
-                  src=""
-                  alt="inicio app horarios"
+                  src="images/galerias/proy-shifts.png"
+                  alt="Pagina inicio Shifts App"
                   onclick="showModal(this)"
                 />
               </figure>
-              <h3>App gesti&oacute;n de horarios I.A.</h3>
+              <h3>Proyecto App Horarios <br>(WIP)</h3>
               <div class="infoProyecto">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Delectus dolore aperiam nisi eum voluptate nihil minus
-                  laudantium, minima, saepe nemo quae, placeat alias quia
-                  excepturi iusto tempore commodi labore maiores ab dolores
-                  provident harum assumenda optio explicabo! Perspiciatis
-                  numquam nostrum, accusantium sit quia laboriosam molestias,
-                  laudantium, eaque nisi temporibus eum.
+                  En este proyecto personal, estoy desarrollando una aplicación con el objetivo de gestionar diversos aspectos clave de un negocio. En ella se incluyen módulos como <strong>turnos</strong>, <strong>ventas</strong>, <strong>inventarios</strong> y <strong>gestión de empleados</strong>. 
+                  A futuro, planeo incorporar un sistema de <strong>gestión de turnos por IA</strong>, que será desarrollado desde el backend, así como un <strong>chat empresarial</strong> para mejorar la comunicación interna.
+                  <br />
+                  El enfoque principal de la aplicación es permitir que los <strong>administradores o gerentes</strong> puedan controlar todas las áreas operativas, mientras que los empleados reciben únicamente la información relevante para el desempeño de sus tareas diarias.
+                  <br />
+                  El <strong>stack tecnológico</strong> utilizado en este proyecto es <strong>React Native, NodeJS, Express</strong> y <strong>MongoDB (MERN)</strong>, seleccionados por su escalabilidad, flexibilidad y facilidad de uso. <br> Además, junto a el se han utilizado tecnologias backend para establecer seguridad de acceso como <strong>JSON Web Tokens, CORS</strong> y <strong>bcrypt</strong>.
+                  <br />
+                  Puedes acceder al proyecto desde el siguiente <a href="https://pelayonaredo.github.io/app-tb-rn">enlace</a>.
                 </p>
+                
               </div>
             </div>
 
             <div class="galeria">
               <figure>
                 <img
-                  src=""
+                  src="images/galerias/proy-shifts1.png"
                   class="imagen"
                   onclick="showModal(this)"
-                  alt="Seccion de noticias auto-actualizable con las secciones incluidas en el html 'noticias'."
+                  alt="Pagina de empleados de Shifts App."
                 />
               </figure>
               <figure>
                 <img
-                  src=""
+                  src="images/galerias/proy-shifts2.png"
                   class="imagen"
                   onclick="showModal(this)"
-                  alt="Apartado de Alumnado con galería y secciones independientes."
+                  alt="Pagina de manejo de ausencias de emplados."
                 />
               </figure>
               <figure>
                 <img
-                  src=""
+                  src="images/galerias/proy-shifts3.png"
                   class="imagen"
                   onclick="showModal(this)"
-                  alt="Agenda de eventos."
+                  alt="Tabla de turnos."
                 />
               </figure>
               <figure>
                 <img
-                  src=""
+                  src="images/galerias/proy-shifts4.png"
                   class="imagen"
                   onclick="showModal(this)"
-                  alt="Pagina de noticias."
-                />
-              </figure>
-              <figure>
-                <img
-                  src=""
-                  class="imagen"
-                  onclick="showModal(this)"
-                  alt="Seccion de informacion de modulos y certificados."
+                  alt="Pagina de configuracion empresarial."
                 />
               </figure>
             </div>
           </article>
-        </div>
-      </section>
-    -->  
   </div>
       <div class="cabeceraFoto" id="fotografia">
         <h2>FOTOGRAF&Iacute;A</h2>
@@ -403,7 +397,6 @@
               <div class="texto">2014</div>
               <div class="linea l1"></div>
               <div class="texto">bachillerato</div>
-              <span class="flecha">&#10552;</span>
             </div>
             <div class="conteTexto">
               <p>Estudios finalizados en el I.E.S. de Llanes, Asturias</p>
@@ -414,7 +407,6 @@
               <div class="texto">2021</div>
               <div class="linea l2"></div>
               <div class="texto">turismo</div>
-              <span class="flecha">&#10552;</span>
             </div>
             <div class="conteTexto">
               <p>Carrera universitaria finalizada en La Laboral (UniOvi)</p>
@@ -425,7 +417,6 @@
               <div class="texto">2023</div>
               <div class="linea l3"></div>
               <div class="texto">certificados</div>
-              <span class="flecha">&#10552;</span>
             </div>
             <div class="conteTexto">
               <p>
@@ -440,7 +431,6 @@
               <div class="texto">2023</div>
               <div class="linea l4"></div>
               <div class="texto">cursos</div>
-              <span class="flecha">&#10552;</span>
             </div>
             <div class="conteTexto">
               <p>
@@ -455,8 +445,7 @@
             <div class="conteTitulo">
               <div class="texto">2024</div>
               <div class="linea l5"></div>
-              <div class="texto">f.p. daw &lt;</div>
-              <span class="flecha">&#10552;</span>
+              <div class="texto">f.p. daw</div>
             </div>
             <div class="conteTexto">
               <p>
@@ -531,7 +520,7 @@
           </div>
           <div class="esBar">
             <div class="conteTitulo">
-              <div class="texto">&gt; desarrollador&nbsp;web</div>
+              <div class="texto">desarrollador&nbsp;web</div>
               <div class="linea l10"></div>
               <div class="texto">2024</div>
             </div>
